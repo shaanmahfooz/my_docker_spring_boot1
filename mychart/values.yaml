@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: myacrrepo531.azurecr.io/myacrrepo531
+  repository: 924691857358.dkr.ecr.ap-southeast-1.amazonaws.com/my-docker-repo
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
@@ -73,7 +73,7 @@ autoscaling:
   minReplicas: 1
   maxReplicas: 100
   targetCPUUtilizationPercentage: 80
-  # targetMemoryUtilizationPercentage: 80
+  ## targetMemoryUtilizationPercentage: 80
 
 nodeSelector: {}
 
